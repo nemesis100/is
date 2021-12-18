@@ -1,0 +1,36 @@
+JAVA software should be installed in your pc/laptop environment
+
+Steps to create digital certificate:
+
+• For windows users, the key tool path is
+C:\Program Files\Java\jre1.8.0_66\bin>
+
+For ubuntu/Linux users, key tool path is
+JAVA_HOME\bin\
+
+• Now open cmd in the following path
+C:\Program Files\Java\jre1.8.0_66\bin>
+
+For ubuntu/Linux users, open terminal in the following path
+JAVA_HOME\bin\
+
+• Now enter the following command
+
+keytool -genkey -alias domainname -keyalg RSA -keystore ./keystore1.jks -keysize 2048
+
+
+• After you entering the above command you must give some
+information related to your certificate like below screen shot.
+
+
+• After entering all the details, you must type “YES “and enter then
+you must again give the password which is given above for key
+store.
+• Now to view your created certificate you must enter the following
+command
+
+C:\Program Files\Java\jre1.8.0_66\bin >keytool -list -v -keystore keystore1.jks
+
+Output:
+Now you will get the certificate as below in the screenshot with
+the information provided by you.
